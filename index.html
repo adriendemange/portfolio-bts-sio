@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio de Adrien D. - Étudiant BTS SIO SISR option Cybersécurité chez HECTEN, Technicien Systèmes & Réseaux chez ACI Technology">
+  <meta name="keywords"
+    content="BTS SIO, SISR, Cybersécurité, Réseaux, Informatique, Portfolio, Adrien, HECTEN, ACI Technology">
+  <meta name="author" content="Adrien D.">
+  <title>Portfolio - Adrien D. | BTS SIO Cybersécurité</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">&lt;Adrien /&gt;</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Accueil</a></li>
+        <li><a href="#about" class="nav-link">À propos</a></li>
+        <li><a href="#skills" class="nav-link">Compétences</a></li>
+        <li><a href="#projects" class="nav-link">Projets</a></li>
+        <li><a href="#enterprise" class="nav-link">Entreprise</a></li>
+        <li><a href="#veille" class="nav-link">Veille</a></li>
+        <li><a href="#certifications" class="nav-link">Formation</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero section" id="home">
+    <canvas class="hero-background" id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-subtitle">&lt; Bonjour, je suis /&gt;</p>
+      <h1 class="hero-title">Adrien D.</h1>
+      <p class="hero-description">
+        Expert en Cybersécurité en devenir • Étudiant BTS SIO SISR chez HECTEN •
+        Technicien Systèmes & Réseaux chez ACI Technology
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">À propos de moi</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>🎓 Formation Actuelle</h3>
+          <p>
+            Actuellement en BTS Services Informatiques aux Organisations (SIO),
+            option Solutions d'Infrastructure, Systèmes et Réseaux (SISR) chez <strong>HECTEN</strong>.
+          </p>
+          <p>
+            Formation en alternance depuis septembre 2024, spécialisée dans l'administration
+            systèmes et réseaux avec une orientation cybersécurité.
+          </p>
+        </div>
+        <div class="card">
+          <h3>💼 Expérience Professionnelle</h3>
+          <p>
+            Alternant <strong>Technicien Systèmes & Réseaux</strong> chez <strong>ACI Technology</strong>
+            depuis septembre 2024 pour une durée de 24 mois.
+          </p>
+          <p>
+            Société d'infogérance spécialisée dans le support informatique, les interventions
+            sur site et la gestion des infrastructures réseau.
+          </p>
+        </div>
+        <div class="card">
+          <h3>🎯 Objectifs</h3>
+          <p>
+            Mon objectif est de devenir expert en cybersécurité et de contribuer
+            à la protection des systèmes d'information contre les menaces actuelles.
+          </p>
+          <p>
+            Je suis passionné par l'informatique et plus particulièrement par la cybersécurité.
+            J'aime découvrir de nouvelles technologies et apprendre de nouvelles choses.
+          </p>
+        </div>
+        <div class="card">
+          <h3>🔒 Spécialisation</h3>
+          <p>
+            Spécialisé en Red Team OSINT, analyse de vulnérabilités et tests d'intrusion.
+          </p>
+          <p>
+            Actif sur TryHackMe et en formation continue sur les techniques de cybersécurité
+            offensive et défensive.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Compétences Techniques</h2>
+
+      <div class="grid grid-2">
+        <div class="skill-category">
+          <h3>🔒 Cybersécurité</h3>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">OSINT & Reconnaissance</span>
+              <span class="skill-level">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Analyse de vulnérabilités</span>
+              <span class="skill-level">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Outils de sécurité (Shodan, TheHarvester)</span>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Sécurité réseau</span>
+              <span class="skill-level">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 75%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>🌐 Systèmes & Réseaux</h3>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Administration Windows Server</span>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Configuration réseau (Cisco Packet Tracer)</span>
+              <span class="skill-level">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Serveur Samba / Partage de fichiers</span>
+              <span class="skill-level">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Installation et maintenance systèmes</span>
+              <span class="skill-level">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 85%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>💻 Développement</h3>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Java</span>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Python</span>
+              <span class="skill-level">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">HTML / CSS / PHP</span>
+              <span class="skill-level">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">SQL / Base de données</span>
+              <span class="skill-level">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>🛠️ Outils & Environnements</h3>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">SpiderFoot / WhoIs</span>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Filius / Cisco Packet Tracer</span>
+              <span class="skill-level">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">PowerShell / Scripts</span>
+              <span class="skill-level">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Git / GitHub</span>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress-width: 80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projets BTS</h2>
+
+      <!-- Terminal de Test -->
+      <div class="card mb-xl" style="max-width: 800px; margin: 0 auto var(--spacing-2xl);">
+        <h3 style="color: var(--color-accent-primary); margin-bottom: var(--spacing-md);">
+          💻 Terminal de Test de Projets
+        </h3>
+        <p style="margin-bottom: var(--spacing-md); color: var(--color-text-secondary);">
+          Utilisez ce terminal pour tester et exécuter mes projets de programmation directement sur ce site web.
+          Sélectionnez un projet dans le menu déroulant et cliquez sur Exécuter !
+        </p>
+
+        <div style="margin-bottom: var(--spacing-md);">
+          <label for="projectSelect" class="form-label">Sélectionner un projet :</label>
+          <select id="projectSelect" class="form-input" style="cursor: pointer;">
+            <option value="fizzbuzz">FizzBuzz (Python)</option>
+            <option value="fibonacci">Suite de Fibonacci (Python)</option>
+            <option value="prime">Vérificateur de nombres premiers (Python)</option>
+            <option value="password">Générateur de mot de passe (Python)</option>
+            <option value="scanner">Simulateur de scan de ports (Python)</option>
+          </select>
+        </div>
+
+        <div class="terminal"
+          style="background: #0d1117; border: 1px solid rgba(0, 255, 255, 0.2); border-radius: var(--radius-md); padding: var(--spacing-md); margin-bottom: var(--spacing-md);">
+          <div style="display: flex; gap: 6px; margin-bottom: var(--spacing-sm);">
+            <span style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f56;"></span>
+            <span style="width: 12px; height: 12px; border-radius: 50%; background: #ffbd2e;"></span>
+            <span style="width: 12px; height: 12px; border-radius: 50%; background: #27c93f;"></span>
+            <span
+              style="margin-left: auto; color: var(--color-text-muted); font-size: 0.75rem; font-family: var(--font-mono);">terminal@adrien-portfolio</span>
+          </div>
+          <pre id="terminalOutput"
+            style="font-family: var(--font-mono); font-size: 0.875rem; color: var(--color-accent-secondary); margin: 0; white-space: pre-wrap; min-height: 200px; max-height: 300px; overflow-y: auto;">
+<span style="color: var(--color-accent-primary);">$</span> Sélectionnez un projet et cliquez sur "Exécuter"...
+
+<span style="color: var(--color-text-muted);"># Projets disponibles :</span>
+<span style="color: var(--color-text-secondary);">  - FizzBuzz : Affiche les nombres de 1 à 20 avec FizzBuzz</span>
+<span style="color: var(--color-text-secondary);">  - Fibonacci : Calcule les 15 premiers nombres de Fibonacci</span>
+<span style="color: var(--color-text-secondary);">  - Nombres premiers : Vérifie si un nombre est premier</span>
+<span style="color: var(--color-text-secondary);">  - Générateur de mot de passe : Génère un mot de passe sécurisé</span>
+<span style="color: var(--color-text-secondary);">  - Scanner de ports : Simule un scan de ports réseau</span>
+          </pre>
+        </div>
+
+        <button id="runProjectBtn" class="btn btn-primary" style="width: 100%;">
+          ▶ Exécuter le projet
+        </button>
+      </div>
+
+      <!-- Cybersecurity Projects -->
+      <h3 class="mb-lg" style="color: var(--color-accent-primary); text-align: center;">🔒 Projets Cybersécurité</h3>
+      <div class="grid grid-3 mb-xl">
+
+        <div class="card project-card">
+          <div class="project-icon">🕵️</div>
+          <h3 class="project-title">Red Team OSINT</h3>
+          <p class="project-description">
+            Recherche d'informations sensibles sur l'entreprise ciblée : Hackaday.
+            Ce projet m'a permis d'explorer des techniques avancées de recherche d'informations.
+          </p>
+          <div class="project-tags">
+            <span class="tag">SpiderFoot</span>
+            <span class="tag">WhoIs</span>
+            <span class="tag">Shodan</span>
+            <span class="tag">TheHarvester</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Development Projects -->
+      <h3 class="mb-lg" style="color: var(--color-accent-secondary); text-align: center;">💻 Projets Développement</h3>
+      <div class="grid grid-3 mb-xl">
+
+        <div class="card project-card">
+          <div class="project-icon">🦁</div>
+          <h3 class="project-title">ZooTickoon</h3>
+          <p class="project-description">
+            Mise en place d'un site web à propos d'un Zoo avec gestion complète du contenu.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Web</span>
+          </div>
+          <a href="https://github.com/adriendemange/DEMANGE/tree/main/ZooTickoon" class="btn btn-outline mt-md"
+            target="_blank" rel="noopener" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-icon">🚗</div>
+          <h3 class="project-title">TinyCar</h3>
+          <p class="project-description">
+            Programmation en Java / Python permettant de gérer un panier d'achat.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Java</span>
+            <span class="tag">Python</span>
+            <span class="tag">OOP</span>
+          </div>
+          <a href="https://github.com/adriendemange/DEMANGE/tree/main/JAVA/TinyCar/TinyCar/src/fr/hecten"
+            class="btn btn-outline mt-md" target="_blank" rel="noopener"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-icon">🏭</div>
+          <h3 class="project-title">EasyLine</h3>
+          <p class="project-description">
+            Application Java de gestion de lignes de production et de suivi des commandes.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Java</span>
+            <span class="tag">Gestion</span>
+            <span class="tag">Production</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- System & Network Projects -->
+      <h3 class="mb-lg" style="color: var(--color-accent-primary); text-align: center;">🌐 Projets Systèmes & Réseaux
+      </h3>
+      <div class="grid grid-3">
+
+        <div class="card project-card">
+          <div class="project-icon">🔌</div>
+          <h3 class="project-title">Filius / Cisco Packet Tracer</h3>
+          <p class="project-description">
+            Mise en place d'un réseau complet sur Filius et Cisco Packet Tracer.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Filius</span>
+            <span class="tag">Cisco</span>
+            <span class="tag">Réseau</span>
+          </div>
+          <a href="https://github.com/adriendemange/DEMANGE/tree/main/B1_RESEAU/" class="btn btn-outline mt-md"
+            target="_blank" rel="noopener" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-icon">📁</div>
+          <h3 class="project-title">Projet Samba</h3>
+          <p class="project-description">
+            Configuration d'un serveur de fichiers Samba pour le partage de ressources dans un environnement réseau.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Samba</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Partage</span>
+          </div>
+          <a href="https://github.com/adriendemange/DEMANGE/blob/main/Projet_SISR_Samba/Projet_TechSolutions_Samba_SISR.pdf"
+            class="btn btn-outline mt-md" target="_blank" rel="noopener"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-icon">🌐</div>
+          <h3 class="project-title">Publication PortFolio</h3>
+          <p class="project-description">
+            Configuration d'un serveur avec AlwaysData afin d'héberger le site web du portfolio.
+          </p>
+          <div class="project-tags">
+            <span class="tag">AlwaysData</span>
+            <span class="tag">Hébergement</span>
+            <span class="tag">Web</span>
+          </div>
+          <a href="https://github.com/adriendemange/DEMANGE/tree/main/AP" class="btn btn-outline mt-md" target="_blank"
+            rel="noopener" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Enterprise Section -->
+  <section class="section" id="enterprise">
+    <div class="container">
+      <h2 class="section-title">Mon Parcours chez ACI Technology</h2>
+
+      <div class="grid grid-2 mb-xl">
+        <div class="card">
+          <h3>🏢 À propos d'ACI Technology</h3>
+          <p>
+            Je suis actuellement chez <strong>ACI Technology</strong> pour une durée de 24 mois (2024 à 2026)
+            en tant que <strong>Technicien Systèmes & Réseaux</strong>.
+          </p>
+          <p>
+            ACI Technology est une société d'infogérance spécialisée dans le support informatique
+            et les interventions sur site.
+          </p>
+          <p style="color: var(--color-text-muted); font-size: 0.875rem; margin-top: 1rem;">
+            📍 2 rue Jean Jaurès, 92270 Bois-Colombes
+          </p>
+        </div>
+        <div class="card">
+          <h3>✅ Compétences développées</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 0.5rem 0; color: var(--color-text-secondary);">✓ Travail en équipe</li>
+            <li style="padding: 0.5rem 0; color: var(--color-text-secondary);">✓ Autonomie</li>
+            <li style="padding: 0.5rem 0; color: var(--color-text-secondary);">✓ Capacité d'adaptation</li>
+            <li style="padding: 0.5rem 0; color: var(--color-text-secondary);">✓ Sens de l'organisation</li>
+            <li style="padding: 0.5rem 0; color: var(--color-text-secondary);">✓ Rigueur</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="mb-lg text-center" style="color: var(--color-accent-primary);">Projets réalisés en entreprise</h3>
+      <div class="grid grid-3">
+
+        <div class="card project-card">
+          <div class="project-icon">💿</div>
+          <h3 class="project-title">Installation Windows USB</h3>
+          <p class="project-description">
+            Configuration d'un OS au propre sur un poste pour permettre une meilleure performance.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Windows</span>
+            <span class="tag">Installation</span>
+            <span class="tag">USB</span>
+          </div>
+          <a href="https://github.com/adriendemange/DEMANGE/blob/main/ACI_TECHNOLOGY/Installer%20un%20syst%C3%A8me%20d%E2%80%99exploitation%20sur%20une%20machine.pdf"
+            class="btn btn-outline mt-md" target="_blank" rel="noopener"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-icon">📄</div>
+          <h3 class="project-title">Documentation Onboarding JICAP</h3>
+          <p class="project-description">
+            Publication d'une documentation interne pour aider les techniciens lors d'un onboarding chez JICAP.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Documentation</span>
+            <span class="tag">Onboarding</span>
+            <span class="tag">JICAP</span>
+          </div>
+          <a href="https://github.com/adriendemange/DEMANGE/tree/main/ACI_TECHNOLOGY/Onboarding_JICAP_PERFORMANCE_Doc"
+            class="btn btn-outline mt-md" target="_blank" rel="noopener"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-icon">⚙️</div>
+          <h3 class="project-title">Automatisation PowerShell</h3>
+          <p class="project-description">
+            Script pour retrouver automatiquement le chemin correct vers la version de Java installée pour une tâche
+            planifiée.
+          </p>
+          <div class="project-tags">
+            <span class="tag">PowerShell</span>
+            <span class="tag">Automatisation</span>
+            <span class="tag">Script</span>
+          </div>
+          <a href="https://github.com/adriendemange/DEMANGE/blob/main/ACI_TECHNOLOGY/Automatiser%20la%20saisie%20d%E2%80%99une%20t%C3%A2che%20planifi%C3%A9e%20pour%20la%20soci%C3%A9t%C3%A9%20B.pdf"
+            class="btn btn-outline mt-md" target="_blank" rel="noopener"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Veille Technologique Section -->
+  <section class="section" id="veille">
+    <div class="container">
+      <h2 class="section-title">Veille Technologique</h2>
+
+      <div class="grid grid-2 mb-xl">
+        <div class="card">
+          <h3>📡 Qu'est-ce que la veille technologique ?</h3>
+          <p>
+            La veille technologique est un processus continu de surveillance et d'analyse
+            des évolutions technologiques dans un domaine spécifique. Elle permet de :
+          </p>
+          <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Anticiper les innovations</li>
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Identifier les opportunités</li>
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Prendre des décisions éclairées</li>
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Maintenir une compétitivité</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>🔧 Ma méthodologie</h3>
+          <p>Pour mener à bien ma veille technologique, j'utilise :</p>
+          <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Google Alerts pour les notifications
+              automatiques</li>
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Réseaux sociaux professionnels
+              (LinkedIn, Twitter)</li>
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Blogs et sites spécialisés en
+              cybersécurité</li>
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Forums et communautés en ligne</li>
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Newsletters de sécurité informatique
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>🎯 Mes thématiques de veille</h3>
+          <p>Je me concentre particulièrement sur :</p>
+          <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Cybersécurité et sécurité des réseaux
+            </li>
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Nouvelles vulnérabilités et menaces
+            </li>
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Outils de sécurité et de monitoring
+            </li>
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Bonnes pratiques en sécurité
+              informatique</li>
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Évolutions des systèmes d'exploitation
+            </li>
+          </ul>
+          <p style="margin-top: 1rem; color: var(--color-accent-primary); font-size: 0.875rem;">
+            <strong>Mots-clés :</strong> Faille de sécurité, Exploit, Vulnérabilité, Malware, Ransomware,
+            Zero-day, Data breach, Phishing, Red team, Blue team
+          </p>
+        </div>
+        <div class="card">
+          <h3>📚 Mes principales sources</h3>
+          <p>Quelques-unes de mes sources d'information privilégiées :</p>
+          <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Blogs de sécurité (Kaspersky, ESET,
+              Malwarebytes)</li>
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Portails d'actualité tech (ZDNet, The
+              Hacker News)</li>
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Communautés Reddit dédiées à la
+              sécurité</li>
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Forums spécialisés (Security Stack
+              Exchange)</li>
+            <li style="padding: 0.25rem 0; color: var(--color-text-secondary);">• Conférences et webinaires en ligne
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <h2 class="section-title">Parcours Scolaire</h2>
+      <div class="grid grid-2">
+
+        <div class="card">
+          <h3>🎓 BTS SIO SISR - HECTEN</h3>
+          <p class="mb-sm"><strong style="color: var(--color-accent-primary);">Septembre 2024 - Présent</strong></p>
+          <p>
+            Formation en alternance spécialisée en solutions d'infrastructure,
+            systèmes et réseaux avec orientation Cybersécurité.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>💼 ACI Technology</h3>
+          <p class="mb-sm"><strong style="color: var(--color-accent-primary);">Alternant depuis Septembre 2024</strong>
+          </p>
+          <p>
+            Technicien Systèmes & Réseaux - Expérience professionnelle en entreprise
+            pour une durée de 24 mois.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🔬 CY Tech</h3>
+          <p class="mb-sm"><strong style="color: var(--color-accent-secondary);">2022 - 2024</strong></p>
+          <p>
+            Formation en Mathématiques, Physique et Informatique.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>📐 Lycée Jean-Perrin</h3>
+          <p class="mb-sm"><strong style="color: var(--color-accent-secondary);">2020 - 2022</strong></p>
+          <p>
+            Baccalauréat Scientifique - Spécialités Mathématiques et Physique.
+          </p>
+        </div>
+
+      </div>
+
+      <h3 class="mb-lg mt-xl text-center" style="color: var(--color-accent-primary);">Modules étudiés en BTS</h3>
+      <div class="grid grid-3">
+        <div class="card text-center">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔢</div>
+          <p style="margin: 0;">Mathématiques Physique-Chimie</p>
+        </div>
+        <div class="card text-center">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔒</div>
+          <p style="margin: 0;">Cybersécurité</p>
+        </div>
+        <div class="card text-center">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">💻</div>
+          <p style="margin: 0;">Programmation informatique</p>
+        </div>
+        <div class="card text-center">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🗄️</div>
+          <p style="margin: 0;">Base de données et gestion de projets</p>
+        </div>
+        <div class="card text-center">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🖥️</div>
+          <p style="margin: 0;">Administration et systèmes réseaux</p>
+        </div>
+        <div class="card text-center">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌐</div>
+          <p style="margin: 0;">Réseau informatique</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Me Contacter</h2>
+      <div class="contact-content">
+        <p class="text-center mb-lg" style="color: var(--color-text-secondary);">
+          Vous avez un projet ou une opportunité ? N'hésitez pas à me contacter !
+        </p>
+
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Nom</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom" required>
+            <p class="form-error" id="nameError">Veuillez entrer votre nom</p>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="votre.email@exemple.com"
+              required>
+            <p class="form-error" id="emailError">Veuillez entrer un email valide</p>
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="form-label">Sujet</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="Sujet de votre message"
+              required>
+            <p class="form-error" id="subjectError">Veuillez entrer un sujet</p>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Votre message..."
+              required></textarea>
+            <p class="form-error" id="messageError">Veuillez entrer un message</p>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Envoyer le message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="https://github.com/adriendemange" class="social-link" target="_blank" rel="noopener"
+          aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/adrien-demange-b0b3b1251/" class="social-link" target="_blank"
+          rel="noopener" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+        <a href="mailto:contact@adriendem.alwaysdata.net" class="social-link" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
+          </svg>
+        </a>
+      </div>
+      <p style="color: var(--color-text-muted); margin-top: 1rem;">
+        &copy; 2026 Adrien D. Tous droits réservés.
+      </p>
+      <p style="color: var(--color-text-muted); font-size: 0.75rem; margin-top: 0.5rem;">
+        Expert en Cybersécurité en devenir • BTS SIO SISR @ HECTEN
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
