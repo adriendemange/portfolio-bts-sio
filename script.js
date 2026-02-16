@@ -52,22 +52,55 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Smooth scroll for navigation links
-  navLinks.forEach(link => {
+  // Section navigation - Show/Hide sections
+  const allSections = document.querySelectorAll('.section');
+
+  // Function to show only the selected section
+  function showSection(sectionId) {
+    allSections.forEach(section => {
+      if (section.id === sectionId.replace('#', '')) {
+        section.classList.add('active-section');
+        section.classList.remove('hidden-section');
+      } else {
+        section.classList.remove('active-section');
+        section.classList.add('hidden-section');
+      }
+    });
+
+    // Update active nav link
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === sectionId) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+
+    // Scroll to top
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // Navigation link click handler - handle ALL internal links
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
       const targetId = this.getAttribute('href');
-      const targetSection = document.querySelector(targetId);
+      showSection(targetId);
 
-      if (targetSection) {
-        const offsetTop = targetSection.offsetTop - 70;
-        window.scrollTo({
-          top: offsetTop,
-          behavior: 'smooth'
-        });
-      }
+      // Close mobile menu if open
+      navMenu.classList.remove('active');
+      const spans = navToggle.querySelectorAll('span');
+      spans[0].style.transform = 'none';
+      spans[1].style.opacity = '1';
+      spans[2].style.transform = 'none';
     });
   });
+
+  // Show home section by default
+  showSection('#home');
 
   // ===================================
   // HERO ANIMATED BACKGROUND
