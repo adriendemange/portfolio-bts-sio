@@ -81,6 +81,11 @@ document.addEventListener('DOMContentLoaded', function () {
       top: 0,
       behavior: 'auto'
     });
+
+    // Backup scroll to ensure it happens
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 10);
   }
 
   // Navigation link click handler - handle ALL internal links
