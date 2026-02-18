@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
   showSection('#home');
 
   // ===================================
-  // HERO ANIMATED BACKGROUND
+  // HERO ANIMATED BACKGROUND - MATRIX RAIN
   // ===================================
 
   const canvas = document.getElementById('heroCanvas');
@@ -117,76 +117,51 @@ document.addEventListener('DOMContentLoaded', function () {
   resizeCanvas();
   window.addEventListener('resize', resizeCanvas);
 
-  // Particle system
-  class Particle {
-    constructor() {
-      this.x = Math.random() * canvas.width;
-      this.y = Math.random() * canvas.height;
-      this.size = Math.random() * 2 + 1;
-      this.speedX = Math.random() * 0.5 - 0.25;
-      this.speedY = Math.random() * 0.5 - 0.25;
-      this.opacity = Math.random() * 0.5 + 0.2;
-    }
+  // Matrix rain configuration
+  const matrixChars = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEF<>/{}[]();:=+-*&|~^%$#@!';
+  const fontSize = 14;
+  let columns = Math.floor(canvas.width / fontSize);
+  let drops = new Array(columns).fill(1);
 
-    update() {
-      this.x += this.speedX;
-      this.y += this.speedY;
+  window.addEventListener('resize', function () {
+    columns = Math.floor(canvas.width / fontSize);
+    drops = new Array(columns).fill(1);
+  });
 
-      // Wrap around screen
-      if (this.x > canvas.width) this.x = 0;
-      if (this.x < 0) this.x = canvas.width;
-      if (this.y > canvas.height) this.y = 0;
-      if (this.y < 0) this.y = canvas.height;
-    }
+  function drawMatrixRain() {
+    // Semi-transparent black background for trail effect
+    ctx.fillStyle = 'rgba(5, 10, 14, 0.06)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    draw() {
-      ctx.fillStyle = `rgba(0, 255, 255, ${this.opacity})`;
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-      ctx.fill();
-    }
-  }
+    ctx.font = fontSize + 'px monospace';
 
-  // Create particles
-  const particlesArray = [];
-  const numberOfParticles = 100;
+    for (let i = 0; i < drops.length; i++) {
+      // Random character
+      const char = matrixChars[Math.floor(Math.random() * matrixChars.length)];
 
-  for (let i = 0; i < numberOfParticles; i++) {
-    particlesArray.push(new Particle());
-  }
-
-  // Animation loop
-  function animateParticles() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    // Draw connections between nearby particles
-    for (let i = 0; i < particlesArray.length; i++) {
-      for (let j = i + 1; j < particlesArray.length; j++) {
-        const dx = particlesArray[i].x - particlesArray[j].x;
-        const dy = particlesArray[i].y - particlesArray[j].y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-
-        if (distance < 100) {
-          ctx.strokeStyle = `rgba(0, 255, 255, ${0.1 * (1 - distance / 100)})`;
-          ctx.lineWidth = 1;
-          ctx.beginPath();
-          ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
-          ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
-          ctx.stroke();
-        }
+      // Vary the green color intensity
+      const brightness = Math.random();
+      if (brightness > 0.95) {
+        ctx.fillStyle = '#ffffff'; // Occasional bright white
+      } else if (brightness > 0.8) {
+        ctx.fillStyle = '#00ff41'; // Bright green
+      } else {
+        ctx.fillStyle = `rgba(0, 255, 65, ${0.3 + Math.random() * 0.4})`; // Dimmer green
       }
+
+      ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+
+      // Reset drop to top randomly after reaching bottom
+      if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+        drops[i] = 0;
+      }
+      drops[i]++;
     }
 
-    // Update and draw particles
-    particlesArray.forEach(particle => {
-      particle.update();
-      particle.draw();
-    });
-
-    requestAnimationFrame(animateParticles);
+    requestAnimationFrame(drawMatrixRain);
   }
 
-  animateParticles();
+  drawMatrixRain();
 
   // ===================================
   // SCROLL ANIMATIONS
@@ -387,9 +362,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // CONSOLE MESSAGE
   // ===================================
 
-  console.log('%c🔒 Portfolio BTS SIO - Cybersécurité', 'color: #00ffff; font-size: 20px; font-weight: bold;');
-  console.log('%cSi vous lisez ceci, vous êtes probablement curieux ! 👀', 'color: #00ff88; font-size: 14px;');
-  console.log('%cN\'hésitez pas à explorer le code source sur GitHub.', 'color: #9ca3af; font-size: 12px;');
+  console.log('%c🔒 Portfolio BTS SIO - Cybersécurité', 'color: #00ff41; font-size: 20px; font-weight: bold;');
+  console.log('%cSi vous lisez ceci, vous êtes probablement curieux ! 👀', 'color: #00e5ff; font-size: 14px;');
+  console.log('%cN\'hésitez pas à explorer le code source sur GitHub.', 'color: #5a7a5a; font-size: 12px;');
 
   // ===================================
   // TERMINAL PROJECT RUNNER
@@ -572,15 +547,15 @@ scan_ports("192.168.1.1", common_ports)`,
 
       if (project) {
         // Show loading animation
-        terminalOutput.innerHTML = `<span style="color: #00ffff;">$</span> python ${project.name.toLowerCase().replace(/ /g, '_')}.py\n<span style="color: #ffbd2e;">Exécution en cours...</span>`;
+        terminalOutput.innerHTML = `<span style="color: #00ff41;">$</span> python ${project.name.toLowerCase().replace(/ /g, '_')}.py\n<span style="color: #ffbd2e;">Exécution en cours...</span>`;
 
         // Simulate execution delay
         setTimeout(() => {
-          let output = `<span style="color: #00ffff;">$</span> python ${project.name.toLowerCase().replace(/ /g, '_')}.py\n\n`;
-          output += `<span style="color: #9ca3af;"># ${project.name}</span>\n`;
-          output += `<span style="color: #9ca3af;"># ${'─'.repeat(40)}</span>\n\n`;
-          output += `<span style="color: #00ff88;">${project.run()}</span>\n\n`;
-          output += `<span style="color: #9ca3af;"># Exécution terminée avec succès ✓</span>`;
+          let output = `<span style="color: #00ff41;">$</span> python ${project.name.toLowerCase().replace(/ /g, '_')}.py\n\n`;
+          output += `<span style="color: #5a7a5a;">## ${project.name}</span>\n`;
+          output += `<span style="color: #5a7a5a;"># ${'─'.repeat(40)}</span>\n\n`;
+          output += `<span style="color: #00ff41;">${project.run()}</span>\n\n`;
+          output += `<span style="color: #5a7a5a;"># Exécution terminée avec succès ✓</span>`;
 
           terminalOutput.innerHTML = output;
         }, 500);
@@ -603,3 +578,4 @@ scan_ports("192.168.1.1", common_ports)`,
   }
 
 });
+
