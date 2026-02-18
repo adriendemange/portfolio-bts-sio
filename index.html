@@ -40,8 +40,8 @@
         <li><a href="#projects" class="nav-link">Projets</a></li>
         <li><a href="#enterprise" class="nav-link">Entreprise</a></li>
         <li><a href="#veille" class="nav-link">Veille</a></li>
-        <li><a href="#epreuve-e4" class="nav-link">E4</a></li>
         <li><a href="#epreuve-e5" class="nav-link">E5</a></li>
+        <li><a href="#epreuve-e6" class="nav-link">E6</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </div>
@@ -501,7 +501,9 @@
       <div class="grid grid-3 mb-xl">
 
         <div class="card project-card">
-          <div class="project-icon">🕵️</div>
+          <div class="project-icon" style="padding: 0; display: block;">
+            <img src="img/osint.png" alt="OSINT" style="width: 60px; height: auto; border-radius: var(--radius-sm);">
+          </div>
           <h3 class="project-title">Red Team OSINT</h3>
           <p class="project-description">
             Recherche d'informations sensibles sur l'entreprise ciblée : Hackaday.
@@ -531,10 +533,244 @@
           </div>
         </div>
 
+        <div class="card project-card">
+          <div class="project-icon">🛡️</div>
+          <h3 class="project-title">ARP Spoofing avec WireShark</h3>
+          <p class="project-description">
+            Étude et mise en pratique de l'attaque ARP Spoofing pour comprendre les vulnérabilités réseau.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Sécurité</span>
+            <span class="tag">Réseau</span>
+            <span class="tag">WireShark</span>
+          </div>
+          <div class="project-tools">
+            <span>Outils →</span>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff003c" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="M12 8v4" />
+              <path d="M12 16h.01" />
+            </svg>
+          </div>
+          <a href="https://github.com/adriendemange/DEMANGE/blob/main/PROJETS_SISR_HECTEN/arp_spoofing_adrien_d.pdf"
+            class="btn btn-outline mt-md" target="_blank" rel="noopener"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
+        </div>
+
+      </div>
+
+
+
+      <!-- System & Network Projects -->
+      <h3 class="mb-lg" style="color: var(--color-accent-primary); text-align: center;">🌐 Projets Systèmes & Réseaux
+      </h3>
+      <div class="grid grid-3">
+
+        <div class="card project-card">
+          <div class="project-icon" style="padding: 0; display: block;">
+            <img src="img/cisco.png" alt="Cisco Packet Tracer"
+              style="width: 60px; height: auto; border-radius: var(--radius-sm);">
+          </div>
+          <h3 class="project-title">Création de VLANS avec Cisco Packet Tracer</h3>
+          <p class="project-description">
+            Mise en place d'un réseau complet sur Cisco Packet Tracer.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Cisco</span>
+            <span class="tag">Réseau</span>
+          </div>
+          <div class="project-tools">
+            <span>Outils →</span>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00bceb" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3" />
+              <circle cx="5" cy="5" r="2" />
+              <circle cx="19" cy="5" r="2" />
+              <circle cx="5" cy="19" r="2" />
+              <circle cx="19" cy="19" r="2" />
+              <path d="M7 6.5L10 10" />
+              <path d="M17 6.5L14 10" />
+              <path d="M7 17.5L10 14" />
+              <path d="M17 17.5L14 14" />
+            </svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00ff41" stroke-width="1.5">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M6 8h4" />
+              <path d="M6 12h8" />
+              <path d="M6 16h6" />
+            </svg>
+          </div>
+          <a href="https://github.com/adriendemange/DEMANGE/tree/main/B1_RESEAU/" class="btn btn-outline mt-md"
+            target="_blank" rel="noopener" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-icon">📁</div>
+          <h3 class="project-title">Partage de fichiers avec Samba</h3>
+          <p class="project-description">
+            Configuration d'un serveur de fichiers Samba pour le partage de ressources dans un environnement réseau.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Samba</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Partage</span>
+          </div>
+          <a href="https://github.com/adriendemange/DEMANGE/blob/main/Projet_SISR_Samba/Projet_TechSolutions_Samba_SISR.pdf"
+            class="btn btn-outline mt-md" target="_blank" rel="noopener"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
+        </div>
+
+
+
+        <div class="card project-card">
+          <div class="project-icon" style="padding: 0; display: block;">
+            <img src="img/active_directory.png" alt="Active Directory"
+              style="width: 100%; height: auto; border-radius: var(--radius-sm);">
+          </div>
+          <h3 class="project-title">Active Directory & Partage de Fichiers</h3>
+          <p class="project-description">
+            Gestion des utilisateurs, des groupes et des droits d'accès aux fichiers dans un environnement Active
+            Directory.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Active Directory</span>
+            <span class="tag">Windows Server</span>
+            <span class="tag">Droits NTFS</span>
+          </div>
+          <a href="https://github.com/adriendemange/DEMANGE/blob/main/PROJETS_SISR_HECTEN/travail_active_directory_adrien_d.docx"
+            class="btn btn-outline mt-md" target="_blank" rel="noopener"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
+        </div>
+
+
+        <div class="card project-card">
+          <div class="project-icon" style="padding: 0; display: block;">
+            <img src="img/office365.png" alt="Microsoft 365"
+              style="width: 100%; height: auto; border-radius: var(--radius-sm);">
+          </div>
+          <h3 class="project-title">Création d'un LAB Microsoft 365 avec Microsoft 365 Developer Program</h3>
+          <p class="project-description">
+            Gestion complète d'un tenant Microsoft 365 : utilisateurs, boîtes mails Exchange, sécurité Entra ID et sites
+            SharePoint.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Microsoft 365</span>
+            <span class="tag">Entra ID</span>
+            <span class="tag">Exchange</span>
+            <span class="tag">Intune</span>
+          </div>
+          <div class="project-tools">
+            <span>Outils →</span>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0078d4" stroke-width="1.5">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+            </svg>
+          </div>
+          <a href="#" class="btn btn-outline mt-md"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem; cursor: not-allowed; opacity: 0.7;">Documentation à
+            venir</a>
+        </div>
+        <div class="card project-card">
+          <div class="project-icon" style="padding: 0; display: block;">
+            <img src="img/pfsense.png" alt="pfSense"
+              style="width: 100%; height: auto; border-radius: var(--radius-sm);">
+          </div>
+          <h3 class="project-title">Administration d'un réseau avec pfSense</h3>
+          <p class="project-description">
+            Projet d'infrastructure à petite échelle avec pfSense, Active Directory Windows, GLPI et autres services
+            essentiels.
+          </p>
+          <div class="project-tags">
+            <span class="tag">pfSense</span>
+            <span class="tag">Active Directory</span>
+            <span class="tag">GLPI</span>
+            <span class="tag">Infrastructure</span>
+          </div>
+          <div class="project-tools">
+            <span>Outils →</span>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff003c" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00bceb" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M9 3v18" />
+              <path d="M3 9h18" />
+            </svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00ff41" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <path d="M8 12h8" />
+              <path d="M12 8v8" />
+            </svg>
+          </div>
+          <a href="https://github.com/adriendemange/DEMANGE/tree/main/Projet_Adrien_FINAL_BTS"
+            class="btn btn-outline mt-md" target="_blank" rel="noopener"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-icon" style="padding: 0; display: block;">
+            <img src="img/windows_server.png" alt="Windows Server"
+              style="width: 100%; height: auto; border-radius: var(--radius-sm);">
+          </div>
+          <h3 class="project-title">Déploiement DHCP & DNS Windows Server</h3>
+          <p class="project-description">
+            Installation et configuration des rôles DHCP et DNS sur Windows Server pour l'attribution d'IP et la
+            résolution de noms.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Windows Server</span>
+            <span class="tag">DHCP</span>
+            <span class="tag">DNS</span>
+            <span class="tag">Infra</span>
+          </div>
+          <a href="#" class="btn btn-outline mt-md"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem; cursor: not-allowed; opacity: 0.6;">Projet à venir</a>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-icon" style="padding: 0; display: block;">
+            <img src="img/docker.png" alt="Docker" style="width: 100%; height: auto; border-radius: var(--radius-sm);">
+          </div>
+          <h3 class="project-title">Docker & Conteneurisation GLPI</h3>
+          <p class="project-description">
+            Déploiement de GLPI via Docker pour une gestion simplifiée et isolée du parc informatique.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Docker</span>
+            <span class="tag">Conteneur</span>
+            <span class="tag">GLPI</span>
+            <span class="tag">Linux</span>
+          </div>
+          <a href="#" class="btn btn-outline mt-md"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem; cursor: not-allowed; opacity: 0.6;">Projet à venir</a>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-icon" style="padding: 0; display: block;">
+            <img src="img/windows_server.png" alt="Windows Server"
+              style="width: 100%; height: auto; border-radius: var(--radius-sm);">
+          </div>
+          <h3 class="project-title">GPO Windows Server</h3>
+          <p class="project-description">
+            Mise en place de stratégies de groupe (GPO) pour sécuriser les postes, déployer des applications et mapper
+            des lecteurs réseaux.
+          </p>
+          <div class="project-tags">
+            <span class="tag">GPO</span>
+            <span class="tag">Sécurité</span>
+            <span class="tag">Windows Server</span>
+            <span class="tag">AD</span>
+          </div>
+          <a href="#" class="btn btn-outline mt-md"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem; cursor: not-allowed; opacity: 0.6;">Projet à venir</a>
+        </div>
+
       </div>
 
       <!-- Development Projects -->
-      <h3 class="mb-lg" style="color: var(--color-accent-secondary); text-align: center;">💻 Projets Développement
+      <h3 class="mb-lg" style="margin-top: 5rem; color: var(--color-accent-secondary); text-align: center;">💻 Projets
+        Développement
       </h3>
       <div class="grid grid-3 mb-xl">
 
@@ -608,110 +844,19 @@
           </div>
         </div>
 
-      </div>
-
-      <!-- System & Network Projects -->
-      <h3 class="mb-lg" style="color: var(--color-accent-primary); text-align: center;">🌐 Projets Systèmes & Réseaux
-      </h3>
-      <div class="grid grid-3">
-
-        <div class="card project-card">
-          <div class="project-icon">🔌</div>
-          <h3 class="project-title">Filius / Cisco Packet Tracer</h3>
-          <p class="project-description">
-            Mise en place d'un réseau complet sur Filius et Cisco Packet Tracer.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Filius</span>
-            <span class="tag">Cisco</span>
-            <span class="tag">Réseau</span>
-          </div>
-          <div class="project-tools">
-            <span>Outils →</span>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00bceb" stroke-width="1.5">
-              <circle cx="12" cy="12" r="3" />
-              <circle cx="5" cy="5" r="2" />
-              <circle cx="19" cy="5" r="2" />
-              <circle cx="5" cy="19" r="2" />
-              <circle cx="19" cy="19" r="2" />
-              <path d="M7 6.5L10 10" />
-              <path d="M17 6.5L14 10" />
-              <path d="M7 17.5L10 14" />
-              <path d="M17 17.5L14 14" />
-            </svg>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00ff41" stroke-width="1.5">
-              <rect x="2" y="4" width="20" height="16" rx="2" />
-              <path d="M6 8h4" />
-              <path d="M6 12h8" />
-              <path d="M6 16h6" />
-            </svg>
-          </div>
-          <a href="https://github.com/adriendemange/DEMANGE/tree/main/B1_RESEAU/" class="btn btn-outline mt-md"
-            target="_blank" rel="noopener" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
-        </div>
-
-        <div class="card project-card">
-          <div class="project-icon">📁</div>
-          <h3 class="project-title">Projet Samba</h3>
-          <p class="project-description">
-            Configuration d'un serveur de fichiers Samba pour le partage de ressources dans un environnement réseau.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Samba</span>
-            <span class="tag">Linux</span>
-            <span class="tag">Partage</span>
-          </div>
-          <a href="https://github.com/adriendemange/DEMANGE/blob/main/Projet_SISR_Samba/Projet_TechSolutions_Samba_SISR.pdf"
-            class="btn btn-outline mt-md" target="_blank" rel="noopener"
-            style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
-        </div>
-
         <div class="card project-card">
           <div class="project-icon">🌐</div>
-          <h3 class="project-title">Publication PortFolio</h3>
+          <h3 class="project-title">Programmation et hébergement d'un site Web</h3>
           <p class="project-description">
             Configuration d'un serveur avec AlwaysData afin d'héberger le site web du portfolio.
           </p>
           <div class="project-tags">
             <span class="tag">AlwaysData</span>
-            <span class="tag">Hébergement</span>
-            <span class="tag">Web</span>
+            <span class="tag">FileZilla</span>
+            <span class="tag">Programmation Web</span>
           </div>
           <a href="https://github.com/adriendemange/DEMANGE/tree/main/AP" class="btn btn-outline mt-md" target="_blank"
             rel="noopener" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
-        </div>
-        <div class="card project-card">
-          <div class="project-icon">🏗️</div>
-          <h3 class="project-title">Infrastructure Complète BTS</h3>
-          <p class="project-description">
-            Projet d'infrastructure à grande échelle avec pfSense, Active Directory Windows, GLPI et autres services
-            essentiels.
-          </p>
-          <div class="project-tags">
-            <span class="tag">pfSense</span>
-            <span class="tag">Active Directory</span>
-            <span class="tag">GLPI</span>
-            <span class="tag">Infrastructure</span>
-          </div>
-          <div class="project-tools">
-            <span>Outils →</span>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff003c" stroke-width="1.5">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-            </svg>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00bceb" stroke-width="1.5">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <path d="M9 3v18" />
-              <path d="M3 9h18" />
-            </svg>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00ff41" stroke-width="1.5">
-              <rect x="2" y="2" width="20" height="20" rx="5" />
-              <path d="M8 12h8" />
-              <path d="M12 8v8" />
-            </svg>
-          </div>
-          <a href="https://github.com/adriendemange/DEMANGE/tree/main/Projet_Adrien_FINAL_BTS"
-            class="btn btn-outline mt-md" target="_blank" rel="noopener"
-            style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
         </div>
 
       </div>
@@ -722,6 +867,12 @@
   <section class="section" id="enterprise">
     <div class="container">
       <h2 class="section-title">Mon Parcours chez ACI Technology</h2>
+
+      <div class="card mb-xl"
+        style="max-width: 90%; margin: 0 auto var(--spacing-xl); padding: 5px; border: 2px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);">
+        <img src="img/aci_bureaux.jpg" alt="Locaux ACI Technology"
+          style="display: block; width: 100%; height: auto; border-radius: var(--radius-md); object-fit: cover;">
+      </div>
 
       <div class="grid grid-2 mb-xl">
         <div class="card">
@@ -855,6 +1006,107 @@
             style="padding: 0.5rem 1rem; font-size: 0.875rem;">Voir le projet</a>
         </div>
 
+        <div class="card project-card" style="opacity: 0.8; border: 1px dashed var(--color-border);">
+          <div class="project-icon">🛡️</div>
+          <h3 class="project-title">Audit Sécurité EDR Huntress & Riot</h3>
+          <p class="project-description">
+            Déploiement et gestion de l'EDR Huntress et de la solution Riot pour la sensibilisation à la cybersécurité.
+          </p>
+          <div class="project-tags">
+            <span class="tag">EDR</span>
+            <span class="tag">Sécurité</span>
+            <span class="tag">Audit</span>
+            <span class="tag">Huntress</span>
+          </div>
+          <a href="#" class="btn btn-outline mt-md"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem; cursor: not-allowed; opacity: 0.6;">Projet à venir</a>
+        </div>
+
+        <div class="card project-card" style="opacity: 0.8; border: 1px dashed var(--color-border);">
+          <div class="project-icon" style="display: flex; align-items: center; justify-content: center;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00bceb" stroke-width="1.5">
+              <path d="M4 17l6-6-6-6" />
+              <path d="M12 19h8" />
+              <rect x="2" y="2" width="20" height="20" rx="2" stroke-dasharray="2 2" />
+            </svg>
+          </div>
+          <h3 class="project-title">Migration Données Serveur (RoboCopy)</h3>
+          <p class="project-description">
+            Migration automatisée et sécurisée de fichiers volumineux entre serveurs Windows via scripts RoboCopy.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Windows Server</span>
+            <span class="tag">RoboCopy</span>
+            <span class="tag">Migration</span>
+            <span class="tag">Script</span>
+          </div>
+          <a href="#" class="btn btn-outline mt-md"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem; cursor: not-allowed; opacity: 0.6;">Projet à venir</a>
+        </div>
+
+        <div class="card project-card" style="opacity: 0.8; border: 1px dashed var(--color-border);">
+          <div class="project-icon">🔧</div>
+          <h3 class="project-title">Maintenance Hardware & Récupération Données</h3>
+          <p class="project-description">
+            Démontage complet d'ordinateurs, remplacement de composants et récupération de données sur disques
+            endommagés.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Hardware</span>
+            <span class="tag">Maintenance</span>
+            <span class="tag">Récupération</span>
+            <span class="tag">Dépannage</span>
+          </div>
+          <a href="#" class="btn btn-outline mt-md"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem; cursor: not-allowed; opacity: 0.6;">Projet à venir</a>
+        </div>
+
+        <div class="card project-card" style="opacity: 0.8; border: 1px dashed var(--color-border);">
+          <div class="project-icon" style="display: flex; align-items: center; justify-content: center;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00bceb" stroke-width="1.5">
+              <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z" />
+              <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+              <path d="M12 8v4" />
+              <path d="M12 16h.01" />
+            </svg>
+          </div>
+          <h3 class="project-title">Déploiement Cisco Secure Client VPN</h3>
+          <p class="project-description">
+            Installation et configuration du client VPN Cisco pour accès distant sécurisé aux ressources entreprise.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Cisco</span>
+            <span class="tag">VPN</span>
+            <span class="tag">Réseau</span>
+            <span class="tag">Télétravail</span>
+          </div>
+          <a href="#" class="btn btn-outline mt-md"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem; cursor: not-allowed; opacity: 0.6;">Projet à venir</a>
+        </div>
+
+        <div class="card project-card" style="opacity: 0.8; border: 1px dashed var(--color-border);">
+          <div class="project-icon" style="display: flex; align-items: center; justify-content: center;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#007ee5" stroke-width="1.5">
+              <path d="M7 9l5-4 5 4-5 4-5-4z" />
+              <path d="M2 13l5 4 5-4-5-4-5 4z" />
+              <path d="M12 13l5 4 5-4-5-4-5 4z" />
+              <path d="M7 18l5 4 5-4-5 4-5-4z" />
+            </svg>
+          </div>
+          <h3 class="project-title">Gestion Collaborative DropBox</h3>
+          <p class="project-description">
+            Mise en place de dossiers partagés sécurisés et gestion des droits utilisateurs sur DropBox Business.
+          </p>
+          <div class="project-tags">
+            <span class="tag">DropBox</span>
+            <span class="tag">Cloud</span>
+            <span class="tag">Collaboratif</span>
+            <span class="tag">Partage</span>
+          </div>
+          <a href="#" class="btn btn-outline mt-md"
+            style="padding: 0.5rem 1rem; font-size: 0.875rem; cursor: not-allowed; opacity: 0.6;">Projet à venir</a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -948,13 +1200,13 @@
     </div>
   </section>
 
-  <!-- Épreuve E4 Section -->
-  <section class="section" id="epreuve-e4">
+  <!-- Épreuve E5 Section -->
+  <section class="section" id="epreuve-e5">
     <div class="container">
-      <h2 class="section-title">Épreuve E4</h2>
+      <h2 class="section-title">Épreuve E5</h2>
       <p class="text-center mb-xl"
         style="color: var(--color-text-secondary); max-width: 700px; margin: 0 auto var(--spacing-xl);">
-        Tableau de synthèse des compétences évaluées lors de l'épreuve E4 du BTS SIO SISR.
+        Tableau de synthèse des compétences évaluées lors de l'épreuve E5 du BTS SIO SISR.
         Ce tableau sera complété au fur et à mesure.
       </p>
 
@@ -1039,13 +1291,13 @@
     </div>
   </section>
 
-  <!-- Projets - Épreuve E5 Section -->
-  <section class="section" id="epreuve-e5">
+  <!-- Projets - Épreuve E6 Section -->
+  <section class="section" id="epreuve-e6">
     <div class="container">
-      <h2 class="section-title">Projets - Épreuve E5</h2>
+      <h2 class="section-title">Projets - Épreuve E6</h2>
       <p class="text-center mb-xl"
         style="color: var(--color-text-secondary); max-width: 700px; margin: 0 auto var(--spacing-xl);">
-        Projets techniques réalisés dans le cadre de l'épreuve E5 du BTS SIO SISR.
+        Projets techniques réalisés dans le cadre de l'épreuve E6 du BTS SIO SISR.
       </p>
 
       <!-- Projet Réseau -->
